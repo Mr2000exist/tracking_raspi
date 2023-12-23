@@ -5,10 +5,10 @@ client.o : client.cpp
 	gcc -c client.cpp
 
 server : server.o
-	gcc -o server.o
+	gcc -o server server.o
 
 client : client.o
-	gcc -o client.o
+	gcc -o server client.o
 
 clean : server client
 	rm server.o client.o
