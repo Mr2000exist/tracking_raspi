@@ -1,8 +1,8 @@
-server.o : server.c
-	gcc -c server.c
+server.o : server.cpp
+	gcc -c server.cpp
 
-client.o : client.c
-	gcc -c client.c
+client.o : client.cpp
+	gcc -c client.cpp
 
 server : server.o
 	gcc -o server.o
